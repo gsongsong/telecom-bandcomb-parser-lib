@@ -1,6 +1,6 @@
 {
   "name": "telecom-bandcomb-parser-lib",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "3GPP E-UTRA, MR-DC and NR band combination related capabilities parsing library",
   "exports": {
     ".": {
