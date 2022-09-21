@@ -1,14 +1,14 @@
-# telecom-bandcomb-parser-lib
+# bandcomb-parser
 
 3GPP E-UTRA, MR-DC and NR band combination related capabilities parsing library
 
 ## Usage
 
 ```sh
-npm install telecom-bandcomb-parser-lib
+npm install bandcomb-parser
 ```
 
 ```js
-import { parserPcap } from "telecom-bandcomb-parser-lib";
+import { parserPcap } from "bandcomb-parser";
 const { eutra, mrdc, nr } = parserPcap(pcapString);
 ```
