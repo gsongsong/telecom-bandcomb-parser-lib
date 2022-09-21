@@ -13,9 +13,9 @@
   "main": "./dist/cjs/index.js",
   "types": "./dist/types/index.d.ts",
   "scripts": {
-    "build": "npm run build-esm && npm run build-cjs",
-    "build-esm": "npx tsc -p tsconfig.esm.json",
-    "build-cjs": "npx tsc -p tsconfig.cjs.json",
+    "build": "shx rm -rf dist && npm run build-esm && npm run build-cjs",
+    "build-esm": "shx rm -rf dist/esm && npx tsc -p tsconfig.esm.json",
+    "build-cjs": "shx rm -rf dist/cjs && npx tsc -p tsconfig.cjs.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/somidad/telecom-bandcomb-parser-lib#readme",
   "devDependencies": {
+    "shx": "^0.3.4",
     "typescript": "^4.8.3"
   }
 }
