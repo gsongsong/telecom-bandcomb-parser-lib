@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ES2015" /* Specify what module code is generated. */,
+    "outDir": "./dist/esm" /* Specify an output folder for all emitted files. */,
+    "declarationDir": "./dist/types" /* Specify the output directory for generated declaration files. */
+  }
+}

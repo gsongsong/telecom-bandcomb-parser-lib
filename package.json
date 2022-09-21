@@ -1,0 +1,35 @@
+{
+  "name": "telecom-bandcomb-parser-lib",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "3GPP E-UTRA, MR-DC and NR band combination related capabilities parsing library",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "build": "npm run build-esm && npm run build-cjs",
+    "build-esm": "npx tsc -p tsconfig.esm.json",
+    "build-cjs": "npx tsc -p tsconfig.cjs.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somidad/telecom-bandcomb-parser-lib.git"
+  },
+  "keywords": [],
+  "author": "Seokseong Jeon <seokseong@jeon.engineer> (https://github.com/somidad)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/somidad/telecom-bandcomb-parser-lib/issues"
+  },
+  "homepage": "https://github.com/somidad/telecom-bandcomb-parser-lib#readme",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
