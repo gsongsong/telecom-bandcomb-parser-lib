@@ -1,5 +1,4 @@
-export declare function buildTable(objList: Object[], lines: (string | number)[][], { title, indexName, indexOffset, }: {
-    title: string;
+export declare function buildTable(objList: Object[], lines: (string | number)[][], { indexName, indexOffset, }: {
     indexName: string;
     indexOffset?: number;
 }): void;

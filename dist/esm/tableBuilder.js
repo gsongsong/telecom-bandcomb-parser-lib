@@ -1,5 +1,4 @@
-export function buildTable(objList, lines, { title, indexName, indexOffset, }) {
-    lines.push([title]);
+export function buildTable(objList, lines, { indexName, indexOffset, }) {
     const objListKeys = getKeys(objList);
     lines.push([indexName, ...objListKeys]);
     buildTableBody(objList, objListKeys, lines, indexOffset !== null && indexOffset !== void 0 ? indexOffset : 0);
