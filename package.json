@@ -1,6 +1,6 @@
 {
   "name": "bandcomb-parser",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "3GPP E-UTRA, MR-DC and NR band combination related capabilities parsing library",
   "exports": {
     ".": {
