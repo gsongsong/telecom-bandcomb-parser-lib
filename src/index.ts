@@ -1,3 +1,4 @@
+export { buildTable } from "./tableBuilder";
 export {
   parse as parsePcap,
   parseEutraFeatureSets,
