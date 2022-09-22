@@ -1,8 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.buildTable = void 0;
-function buildTable(objList, lines, { title, indexName, indexOffset, }) {
-    lines.push([title]);
+function buildTable(objList, lines, { indexName, indexOffset, }) {
     const objListKeys = getKeys(objList);
     lines.push([indexName, ...objListKeys]);
     buildTableBody(objList, objListKeys, lines, indexOffset !== null && indexOffset !== void 0 ? indexOffset : 0);

@@ -2,16 +2,13 @@ export function buildTable(
   objList: Object[],
   lines: (string | number)[][],
   {
-    title,
     indexName,
     indexOffset,
   }: {
-    title: string;
     indexName: string;
     indexOffset?: number;
   }
 ) {
-  lines.push([title]);
   const objListKeys = getKeys(objList);
   lines.push([indexName, ...objListKeys]);
   buildTableBody(objList, objListKeys, lines, indexOffset ?? 0);
